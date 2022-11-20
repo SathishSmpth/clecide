@@ -1,8 +1,6 @@
 import * as React from "react";
 import {
   AppBar,
-  Tabs,
-  Tab,
   Toolbar,
   IconButton,
   Typography,
@@ -13,8 +11,7 @@ import {
 import MenuIcon from "@mui/icons-material/Menu";
 import { Box } from "@mui/system";
 import SearchMenu from "./SearchMenu";
-import Cart from "../../images/cart.svg";
-import User from "../../images/user.svg";
+import BasicTab from "./tabs.tsx";
 
 function ResponsiveAppBar() {
   const [anchorElNav, setAnchorElNav] = React.useState<null | HTMLElement>(
@@ -111,44 +108,8 @@ function ResponsiveAppBar() {
               </MenuItem>
             </Menu>
           </Box>
-          <Box
-            sx={{
-              flexGrow: 1,
-              display: { xs: "none", md: "flex" },
-              justifyContent:"right",
-              color:"#0000",
-              alignItems: "center",
-            }}
-          >
-            <Tabs aria-label="basic tabs example">
-              <Tab
-                label="Home"
-                onClick={handleCloseNavMenu}
-              />
-              <Tab
-                label="All Products"
-                onClick={handleCloseNavMenu}
-              />
-              <Tab
-                label="Contact"
-                onClick={handleCloseNavMenu}
-              />
-            </Tabs>
-            <Box
-              component="img"
-              onClick={handleCloseNavMenu}
-              sx={{ padding: "0px 15px" }}
-              src={Cart}
-            />
-
-            <Box
-              component="img"
-              onClick={handleCloseNavMenu}
-              sx={{ padding: "0px 15px" }}
-              src={User}
-            />
-          </Box>
-        </Toolbar>
+          <BasicTab/>
+          </Toolbar>
       </Container>
     </AppBar>
   );
