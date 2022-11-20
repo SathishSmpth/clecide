@@ -10,11 +10,10 @@ const Footer = () => {
       sx={{
         backgroundColor: "#001524",
         color: "#8bc34a",
-        
       }}
     >
-      <Grid container sx={{padding: "50px 0px"}}>
-        <Grid item xs={12} md={3} l={3} xl={3}>
+      <Grid container sx={{ padding: "25px 0px" }}>
+        <Grid item xs={12} md={3} l={3} xl={3} sx={{padding:"25px"}}>
           <Box
             component="img"
             sx={{
@@ -26,7 +25,7 @@ const Footer = () => {
             src={require("../images/logo.png")}
           />
         </Grid>
-        <Grid item xs={12} md={3} l={3} xl={3}>
+        <Grid item xs={12} md={3} l={3} xl={3} sx={{padding:"25px"}}>
           <Box component="h6" sx={{ color: "white", fontSize: "32px" }}>
             MENU
           </Box>
@@ -36,7 +35,7 @@ const Footer = () => {
             <Box>Contact Us</Box>
           </Box>
         </Grid>
-        <Grid item xs={12} md={3} l={3} xl={3}>
+        <Grid item xs={12} md={3} l={3} xl={3} sx={{padding:"25px"}}>
           <Box component="h6" sx={{ color: "white", fontSize: "32px" }}>
             ACCOUNT
           </Box>
@@ -47,7 +46,7 @@ const Footer = () => {
             <Box>Check Out</Box>
           </Box>
         </Grid>
-        <Grid item xs={12} md={3} l={3} xl={3}>
+        <Grid item xs={12} md={3} l={3} xl={3} sx={{padding:"25px"}}>
           <Box component="h6" sx={{ color: "white", fontSize: "32px" }}>
             CONTACT INFO
           </Box>
@@ -64,14 +63,17 @@ const Footer = () => {
           </Box>
         </Grid>
       </Grid>
-      <Grid container sx={{ color: "white",borderTop:"1px solid white", padding:"25px"}}>
+      <Grid
+        container
+        sx={{ color: "white", borderTop: "1px solid white", padding: "25px" }}
+      >
         <Grid item xs={12} md={6} l={6} xl={6}>
           <Box component="h5">
             COPYRIGHT ©2021 HALEY CONSUMER PRODUCTS PRIVATE LIMITED
           </Box>
         </Grid>
-        <Grid item xs={12} md={6} l={6} xl={6} sx={{textAlign:"right"}}>
-            Design by Compunet Connections.
+        <Grid item xs={12} md={6} l={6} xl={6} sx={{ textAlign: "right" }}>
+          Design by Compunet Connections.
         </Grid>
       </Grid>
     </Box>

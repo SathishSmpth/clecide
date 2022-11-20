@@ -56,6 +56,8 @@ const SearchMenu = () => {
           backgroundColor: "white",
           color: "black",
           borderRadius: "30px",
+          width:"fit-content",
+          height:"fit-content"
         }}
       />
     </Search>
